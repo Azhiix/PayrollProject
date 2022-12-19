@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sezwan Payroll</title>
+    <title>ThinkWisePayroll</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <link href="style.bundle.css" rel="stylesheet" />
     <link href="plugins.bundle.css" rel="stylesheet" />
@@ -16,16 +16,16 @@
 <body>
 
 
-    <div>
+    <div class="noscroll">
         <main role="main" class="pb-3">
           
-<div class="d-flex flex-column flex-root">
+<div class="d-flex flex-column flex-root maindv">
     <!--begin::Authentication - Sign-in -->
     <div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed">
         <!--begin::Content-->
-        <div class="d-flex flex-center flex-column flex-column-fluid p-10 pb-lg-20">
+        <div class="d-flex flex-center flex-column flex-column-fluid p-mob pb-lg-20 pd-center">
             <!--begin::Wrapper-->
-            <div class="w-lg-425px bg-body rounded shadow-sm p-10 p-lg-15 mx-auto">
+            <div class="w-lg-425px bg-body rounded shadow-sm p-mob p-lg-15 mx-auto">
                 <!--begin::Form-->
                 <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" action="#">
                     <!--begin::Heading-->
@@ -55,7 +55,7 @@
                     <!--begin::Actions-->
                     <div class="text-center">
                         <!--begin::Submit button-->
-                        <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary mb-5" style="border-radius: 20px; padding:10px 25% 10px 25% !important;">
+                        <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary mb-5" style="border-radius: 20px; width:50%;">
                             <span class="indicator-label">Sign in</span>
                             <span class="indicator-progress">
                                 Please wait...
@@ -63,6 +63,10 @@
                             </span>
                         </button>
                         <p><a href="#"><i>Forget password</i></a></p>
+
+                        <div>
+                            <p id="message">You have been disconnected. Please login in</p>
+                        </div>
 
                     </div>
                     <!--end::Actions-->
@@ -72,17 +76,19 @@
             <!--end::Wrapper-->
         </div>
         <!--end::Content-->
-        <!--begin::Footer-->
-        <div class="d-flex flex-center flex-column-auto p-10">
-            <!--begin::Links-->
-            <div class="d-flex align-items-center fw-bold fs-6" >
-                <p> <i style="color: #ffffff;">Powered by Sewan Technologies</i></p>
-            </div>
-            <!--end::Links-->
-        </div>
-        <!--end::Footer-->
+
     </div>
     <!--end::Authentication - Sign-in-->
+
+            <!--begin::Footer-->
+            <div class="d-flex flex-center flex-column-auto footerdv p-mob">
+                <!--begin::Links-->
+                <div class="d-flex align-items-center fw-bold fs-6" >
+                    <p> <i style="color: #ffffff;">Powered by Sezwan Technologies</i></p>
+                </div>
+                <!--end::Links-->
+            </div>
+            <!--end::Footer-->
 </div>
 
         </main>
